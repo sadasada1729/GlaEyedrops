@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct TopView: View {
-    var viewModel: MainViewModel
+    @StateObject var viewModel: MainViewModel
     
     var body: some View {
         VStack {
@@ -18,22 +18,26 @@ struct TopView: View {
                 .scaledToFit()
             HStack {
                 Button {
-                    
+                    viewModel.topViewDrugNameBtnTapped()
                 } label: {
                     Text("薬品名から")
-                        .foregroundStyle(viewModel.topvViewBtnTextColor)
+                        .foregroundStyle(viewModel.topvViewDrugNameBtnTextColor)
+                        .font(.system(size: 17, weight: .medium))
                         .padding()
-                        .background(viewModel.topvViewBtnBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
+                        .frame(minWidth: 120)
+                        .background(viewModel.topvViewDrugNameBtnBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
                 }
                 .compositingGroup()
                 .padding()
                 Button {
-                    
+                    viewModel.topViewComponentBtnTapped()
                 } label: {
-                    Text("薬品名から")
-                        .foregroundStyle(viewModel.topvViewBtnTextColor)
+                    Text("成分から")
+                        .foregroundStyle(viewModel.topvViewComponentBtnTextColor)
+                        .font(.system(size: 17, weight: .medium))
                         .padding()
-                        .background(viewModel.topvViewBtnBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
+                        .frame(minWidth: 120)
+                        .background(viewModel.topvViewComponentBtnBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
                 }
                 .compositingGroup()
                 .padding()

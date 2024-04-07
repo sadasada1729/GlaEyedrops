@@ -16,6 +16,7 @@
 		CD4394652BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */; };
 		CD4394722BC2900000672530 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394712BC2900000672530 /* TopView.swift */; };
 		CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394732BC2992A00672530 /* MainViewModel.swift */; };
+		CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4394762BC349C800672530 /* gla_eyedrops.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CD4394762BC349C800672530 /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CD4394492BC28E9D00672530 /* MainView.swift */,
 				CD4394732BC2992A00672530 /* MainViewModel.swift */,
 				CD4394712BC2900000672530 /* TopView.swift */,
+				CD4394752BC3493100672530 /* Supporting Files */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
 				CD43944D2BC28E9F00672530 /* Preview Content */,
 			);
@@ -131,6 +134,14 @@
 				CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */,
 			);
 			path = GlaEyedropsUITests;
+			sourceTree = "<group>";
+		};
+		CD4394752BC3493100672530 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394762BC349C800672530 /* gla_eyedrops.csv */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			files = (
 				CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */,
 				CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */,
+				CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,11 +445,11 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,11 +474,11 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
