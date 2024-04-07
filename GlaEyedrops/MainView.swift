@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject private var viewModel = MainViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TopView(viewModel: viewModel)
+            Spacer()
+            Text("osada")
         }
-        .padding()
     }
 }
 

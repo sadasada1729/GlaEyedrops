@@ -14,6 +14,8 @@
 		CD4394592BC28E9F00672530 /* GlaEyedropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */; };
 		CD4394632BC28E9F00672530 /* GlaEyedropsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */; };
 		CD4394652BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */; };
+		CD4394722BC2900000672530 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394712BC2900000672530 /* TopView.swift */; };
+		CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394732BC2992A00672530 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CD43945E2BC28E9F00672530 /* GlaEyedropsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITests.swift; sourceTree = "<group>"; };
 		CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
 				CD4394492BC28E9D00672530 /* MainView.swift */,
+				CD4394732BC2992A00672530 /* MainViewModel.swift */,
+				CD4394712BC2900000672530 /* TopView.swift */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
 				CD43944D2BC28E9F00672530 /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD43944A2BC28E9D00672530 /* MainView.swift in Sources */,
+				CD4394722BC2900000672530 /* TopView.swift in Sources */,
 				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
+				CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
