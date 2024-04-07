@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */; };
-		CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394492BC28E9D00672530 /* ContentView.swift */; };
+		CD43944A2BC28E9D00672530 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394492BC28E9D00672530 /* MainView.swift */; };
 		CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944B2BC28E9F00672530 /* Assets.xcassets */; };
 		CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */; };
 		CD4394592BC28E9F00672530 /* GlaEyedropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		CD4394442BC28E9D00672530 /* GlaEyedrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlaEyedrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsApp.swift; sourceTree = "<group>"; };
-		CD4394492BC28E9D00672530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD4394492BC28E9D00672530 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CD43944B2BC28E9F00672530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD4394542BC28E9F00672530 /* GlaEyedropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
-				CD4394492BC28E9D00672530 /* ContentView.swift */,
+				CD4394492BC28E9D00672530 /* MainView.swift */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
 				CD43944D2BC28E9F00672530 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */,
+				CD43944A2BC28E9D00672530 /* MainView.swift in Sources */,
 				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
