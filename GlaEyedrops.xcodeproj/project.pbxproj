@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */; };
+		CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394492BC28E9D00672530 /* ContentView.swift */; };
+		CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944B2BC28E9F00672530 /* Assets.xcassets */; };
+		CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */; };
+		CD4394592BC28E9F00672530 /* GlaEyedropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */; };
+		CD4394632BC28E9F00672530 /* GlaEyedropsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */; };
+		CD4394652BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD4394552BC28E9F00672530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD43943C2BC28E9D00672530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD4394432BC28E9D00672530;
+			remoteInfo = GlaEyedrops;
+		};
+		CD43945F2BC28E9F00672530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD43943C2BC28E9D00672530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD4394432BC28E9D00672530;
+			remoteInfo = GlaEyedrops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD4394442BC28E9D00672530 /* GlaEyedrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlaEyedrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsApp.swift; sourceTree = "<group>"; };
+		CD4394492BC28E9D00672530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD43944B2BC28E9F00672530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD4394542BC28E9F00672530 /* GlaEyedropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsTests.swift; sourceTree = "<group>"; };
+		CD43945E2BC28E9F00672530 /* GlaEyedropsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITests.swift; sourceTree = "<group>"; };
+		CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4394412BC28E9D00672530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4394512BC28E9F00672530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD43945B2BC28E9F00672530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD43943B2BC28E9D00672530 = {
+			isa = PBXGroup;
+			children = (
+				CD4394462BC28E9D00672530 /* GlaEyedrops */,
+				CD4394572BC28E9F00672530 /* GlaEyedropsTests */,
+				CD4394612BC28E9F00672530 /* GlaEyedropsUITests */,
+				CD4394452BC28E9D00672530 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4394452BC28E9D00672530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394442BC28E9D00672530 /* GlaEyedrops.app */,
+				CD4394542BC28E9F00672530 /* GlaEyedropsTests.xctest */,
+				CD43945E2BC28E9F00672530 /* GlaEyedropsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4394462BC28E9D00672530 /* GlaEyedrops */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
+				CD4394492BC28E9D00672530 /* ContentView.swift */,
+				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
+				CD43944D2BC28E9F00672530 /* Preview Content */,
+			);
+			path = GlaEyedrops;
+			sourceTree = "<group>";
+		};
+		CD43944D2BC28E9F00672530 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD4394572BC28E9F00672530 /* GlaEyedropsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */,
+			);
+			path = GlaEyedropsTests;
+			sourceTree = "<group>";
+		};
+		CD4394612BC28E9F00672530 /* GlaEyedropsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */,
+				CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */,
+			);
+			path = GlaEyedropsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4394432BC28E9D00672530 /* GlaEyedrops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4394682BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedrops" */;
+			buildPhases = (
+				CD4394402BC28E9D00672530 /* Sources */,
+				CD4394412BC28E9D00672530 /* Frameworks */,
+				CD4394422BC28E9D00672530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlaEyedrops;
+			productName = GlaEyedrops;
+			productReference = CD4394442BC28E9D00672530 /* GlaEyedrops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD4394532BC28E9F00672530 /* GlaEyedropsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD43946B2BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedropsTests" */;
+			buildPhases = (
+				CD4394502BC28E9F00672530 /* Sources */,
+				CD4394512BC28E9F00672530 /* Frameworks */,
+				CD4394522BC28E9F00672530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD4394562BC28E9F00672530 /* PBXTargetDependency */,
+			);
+			name = GlaEyedropsTests;
+			productName = GlaEyedropsTests;
+			productReference = CD4394542BC28E9F00672530 /* GlaEyedropsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD43945D2BC28E9F00672530 /* GlaEyedropsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD43946E2BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedropsUITests" */;
+			buildPhases = (
+				CD43945A2BC28E9F00672530 /* Sources */,
+				CD43945B2BC28E9F00672530 /* Frameworks */,
+				CD43945C2BC28E9F00672530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD4394602BC28E9F00672530 /* PBXTargetDependency */,
+			);
+			name = GlaEyedropsUITests;
+			productName = GlaEyedropsUITests;
+			productReference = CD43945E2BC28E9F00672530 /* GlaEyedropsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD43943C2BC28E9D00672530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CD4394432BC28E9D00672530 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CD4394532BC28E9F00672530 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CD4394432BC28E9D00672530;
+					};
+					CD43945D2BC28E9F00672530 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CD4394432BC28E9D00672530;
+					};
+				};
+			};
+			buildConfigurationList = CD43943F2BC28E9D00672530 /* Build configuration list for PBXProject "GlaEyedrops" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD43943B2BC28E9D00672530;
+			productRefGroup = CD4394452BC28E9D00672530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4394432BC28E9D00672530 /* GlaEyedrops */,
+				CD4394532BC28E9F00672530 /* GlaEyedropsTests */,
+				CD43945D2BC28E9F00672530 /* GlaEyedropsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4394422BC28E9D00672530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */,
+				CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4394522BC28E9F00672530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD43945C2BC28E9F00672530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4394402BC28E9D00672530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */,
+				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4394502BC28E9F00672530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4394592BC28E9F00672530 /* GlaEyedropsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD43945A2BC28E9F00672530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4394652BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift in Sources */,
+				CD4394632BC28E9F00672530 /* GlaEyedropsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD4394562BC28E9F00672530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD4394432BC28E9D00672530 /* GlaEyedrops */;
+			targetProxy = CD4394552BC28E9F00672530 /* PBXContainerItemProxy */;
+		};
+		CD4394602BC28E9F00672530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD4394432BC28E9D00672530 /* GlaEyedrops */;
+			targetProxy = CD43945F2BC28E9F00672530 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD4394662BC28E9F00672530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD4394672BC28E9F00672530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4394692BC28E9F00672530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GlaEyedrops/Preview Content\"";
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedrops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD43946A2BC28E9F00672530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GlaEyedrops/Preview Content\"";
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedrops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD43946C2BC28E9F00672530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlaEyedrops.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GlaEyedrops";
+			};
+			name = Debug;
+		};
+		CD43946D2BC28E9F00672530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlaEyedrops.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GlaEyedrops";
+			};
+			name = Release;
+		};
+		CD43946F2BC28E9F00672530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlaEyedrops;
+			};
+			name = Debug;
+		};
+		CD4394702BC28E9F00672530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M92QFT5Y23;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KokiOsada.GlaEyedropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlaEyedrops;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD43943F2BC28E9D00672530 /* Build configuration list for PBXProject "GlaEyedrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4394662BC28E9F00672530 /* Debug */,
+				CD4394672BC28E9F00672530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4394682BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4394692BC28E9F00672530 /* Debug */,
+				CD43946A2BC28E9F00672530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD43946B2BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedropsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD43946C2BC28E9F00672530 /* Debug */,
+				CD43946D2BC28E9F00672530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD43946E2BC28E9F00672530 /* Build configuration list for PBXNativeTarget "GlaEyedropsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD43946F2BC28E9F00672530 /* Debug */,
+				CD4394702BC28E9F00672530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD43943C2BC28E9D00672530 /* Project object */;
+}
