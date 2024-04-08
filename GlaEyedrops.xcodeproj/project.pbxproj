@@ -17,6 +17,8 @@
 		CD4394722BC2900000672530 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394712BC2900000672530 /* TopView.swift */; };
 		CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394732BC2992A00672530 /* MainViewModel.swift */; };
 		CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4394762BC349C800672530 /* gla_eyedrops.csv */; };
+		FF8318592BC493E700AB4B5D /* SearchDrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8318582BC493E700AB4B5D /* SearchDrugView.swift */; };
+		FF83185B2BC4964200AB4B5D /* SearchDrugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CD4394762BC349C800672530 /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
+		FF8318582BC493E700AB4B5D /* SearchDrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugView.swift; sourceTree = "<group>"; };
+		FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
 				CD4394492BC28E9D00672530 /* MainView.swift */,
 				CD4394732BC2992A00672530 /* MainViewModel.swift */,
+				FF8318582BC493E700AB4B5D /* SearchDrugView.swift */,
+				FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */,
 				CD4394712BC2900000672530 /* TopView.swift */,
 				CD4394752BC3493100672530 /* Supporting Files */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
@@ -275,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF83185B2BC4964200AB4B5D /* SearchDrugViewModel.swift in Sources */,
 				CD43944A2BC28E9D00672530 /* MainView.swift in Sources */,
 				CD4394722BC2900000672530 /* TopView.swift in Sources */,
 				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
+				FF8318592BC493E700AB4B5D /* SearchDrugView.swift in Sources */,
 				CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

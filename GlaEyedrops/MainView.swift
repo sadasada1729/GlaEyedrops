@@ -12,8 +12,13 @@ struct MainView: View {
     var body: some View {
         VStack {
             TopView(viewModel: viewModel)
+            switch viewModel.viewContent {
+            case .drug_name:
+                SearchDrugView()
+            case .component:
+                Text("osada")
+            }
             Spacer()
-            Text("osada")
         }
     }
 }
