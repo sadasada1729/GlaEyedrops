@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */; };
-		CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394492BC28E9D00672530 /* ContentView.swift */; };
+		CD43944A2BC28E9D00672530 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394492BC28E9D00672530 /* MainView.swift */; };
 		CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944B2BC28E9F00672530 /* Assets.xcassets */; };
 		CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */; };
 		CD4394592BC28E9F00672530 /* GlaEyedropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394582BC28E9F00672530 /* GlaEyedropsTests.swift */; };
 		CD4394632BC28E9F00672530 /* GlaEyedropsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */; };
 		CD4394652BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */; };
+		CD4394722BC2900000672530 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394712BC2900000672530 /* TopView.swift */; };
+		CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394732BC2992A00672530 /* MainViewModel.swift */; };
+		CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4394762BC349C800672530 /* gla_eyedrops.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		CD4394442BC28E9D00672530 /* GlaEyedrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlaEyedrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsApp.swift; sourceTree = "<group>"; };
-		CD4394492BC28E9D00672530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD4394492BC28E9D00672530 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CD43944B2BC28E9F00672530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD43944E2BC28E9F00672530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD4394542BC28E9F00672530 /* GlaEyedropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		CD43945E2BC28E9F00672530 /* GlaEyedropsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlaEyedropsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4394622BC28E9F00672530 /* GlaEyedropsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITests.swift; sourceTree = "<group>"; };
 		CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlaEyedropsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CD4394762BC349C800672530 /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
-				CD4394492BC28E9D00672530 /* ContentView.swift */,
+				CD4394492BC28E9D00672530 /* MainView.swift */,
+				CD4394732BC2992A00672530 /* MainViewModel.swift */,
+				CD4394712BC2900000672530 /* TopView.swift */,
+				CD4394752BC3493100672530 /* Supporting Files */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
 				CD43944D2BC28E9F00672530 /* Preview Content */,
 			);
@@ -125,6 +134,14 @@
 				CD4394642BC28E9F00672530 /* GlaEyedropsUITestsLaunchTests.swift */,
 			);
 			path = GlaEyedropsUITests;
+			sourceTree = "<group>";
+		};
+		CD4394752BC3493100672530 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4394762BC349C800672530 /* gla_eyedrops.csv */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			files = (
 				CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */,
 				CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */,
+				CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD43944A2BC28E9D00672530 /* ContentView.swift in Sources */,
+				CD43944A2BC28E9D00672530 /* MainView.swift in Sources */,
+				CD4394722BC2900000672530 /* TopView.swift in Sources */,
 				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
+				CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +445,11 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +474,11 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
