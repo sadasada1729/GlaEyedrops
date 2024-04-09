@@ -17,22 +17,29 @@ struct SearchDrugView: View {
         VStack {
             textField
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-            VStack {
-                HStack {
-                    eyedropsIcon1
-                    eyedropsIcon2
-                    eyedropsIcon3
-                    eyedropsIcon4
+            ZStack {
+                VStack {
+                    HStack {
+                        eyedropsIcon1
+                        eyedropsIcon2
+                        eyedropsIcon3
+                        eyedropsIcon4
+                    }
+                    .padding()
+                    HStack {
+                        eyedropsIcon5
+                        eyedropsIcon6
+                        eyedropsIcon7
+                    }
+                    .padding()
                 }
-                .padding()
-                HStack {
-                    eyedropsIcon5
-                    eyedropsIcon6
-                    eyedropsIcon7
+                .background(viewModel.backgroundColor, in: RoundedRectangle(cornerRadius: 18))
+                .compositingGroup()
+                .shadow(radius: 4, x: 3, y: 4)
+                if viewModel.showDrugNameList {
+                    drugNameList
                 }
-                .padding()
             }
-            .background(viewModel.backgroundColor, in: RoundedRectangle(cornerRadius: 18))
         }
         .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
     }
@@ -117,6 +124,17 @@ private extension SearchDrugView {
             .scaledToFit()
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+    
+    var drugNameList: some View {
+        List {
+            ForEach(viewModel.drugNames, id: \.self) { drugName in
+                Text(drugName)
+            }
+        }
+        .buttonStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .background(Color.clear)
     }
 
 }

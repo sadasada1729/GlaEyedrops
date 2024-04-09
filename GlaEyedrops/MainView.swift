@@ -24,8 +24,6 @@ struct MainView: View {
                         }
                         Spacer()
                     }
-                        .compositingGroup()
-                        .shadow(radius: 5)
             )
         }
         
