@@ -12,14 +12,23 @@ struct MainView: View {
     var body: some View {
         VStack {
             TopView(viewModel: viewModel)
-            switch viewModel.viewContent {
-            case .drug_name:
-                SearchDrugView()
-            case .component:
-                Text("osada")
-            }
-            Spacer()
+            LinearGradient(gradient: Gradient(colors: [viewModel.color0, viewModel.color1, viewModel.color2, viewModel.color3]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+                .overlay(
+                    VStack {
+                        switch viewModel.viewContent {
+                        case .drug_name:
+                            SearchDrugView()
+                        case .component:
+                            Text("osada")
+                        }
+                        Spacer()
+                    }
+                        .compositingGroup()
+                        .shadow(radius: 5)
+            )
         }
+        
     }
 }
 

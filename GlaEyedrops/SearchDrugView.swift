@@ -16,6 +16,23 @@ struct SearchDrugView: View {
     var body: some View {
         VStack {
             textField
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+            VStack {
+                HStack {
+                    eyedropsIcon1
+                    eyedropsIcon2
+                    eyedropsIcon3
+                    eyedropsIcon4
+                }
+                .padding()
+                HStack {
+                    eyedropsIcon5
+                    eyedropsIcon6
+                    eyedropsIcon7
+                }
+                .padding()
+            }
+            .background(viewModel.backgroundColor, in: RoundedRectangle(cornerRadius: 18))
         }
         .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
     }
@@ -38,6 +55,70 @@ private extension SearchDrugView {
             }
             .accessibility(identifier: "uitest.bottomview.texteditor")
     }
+    
+    var eyedropsIcon1: some View {
+        Image("eyedrops_PG")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsHighlightColor)
+    }
+    
+    var eyedropsIcon2: some View {
+        Image("eyedrops_beta")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+    
+    var eyedropsIcon3: some View {
+        Image("eyedrops_CAI")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+    
+    var eyedropsIcon4: some View {
+        Image("eyedrops_alpha1")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+    
+    var eyedropsIcon5: some View {
+        Image("eyedrops_alpha2")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsHighlightColor)
+    }
+    
+    var eyedropsIcon6: some View {
+        Image("eyedrops_Rho")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+    
+    var eyedropsIcon7: some View {
+        Image("eyedrops_EP2")
+            .renderingMode(.template)
+            .resizable()
+            .scaledToFit()
+            .frame(maxWidth: 70)
+            .foregroundStyle(viewModel.eyedropsDefaultColor)
+    }
+
 }
 
 
