@@ -13,7 +13,6 @@ struct MainView: View {
         VStack {
             TopView(viewModel: viewModel)
             LinearGradient(gradient: Gradient(colors: [viewModel.color0, viewModel.color1, viewModel.color2, viewModel.color3]), startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
                 .overlay(
                     VStack {
                         switch viewModel.viewContent {
@@ -26,7 +25,8 @@ struct MainView: View {
                     }
             )
         }
-        
+        .ignoresSafeArea()
+        .background(.white)
     }
 }
 

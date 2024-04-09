@@ -11,7 +11,6 @@ import SwiftUI
 struct SearchDrugView: View {
     
     @StateObject private var viewModel = SearchDrugViewModel()
-    @FocusState var isFocused: Bool
     
     var body: some View {
         VStack {
@@ -57,7 +56,6 @@ private extension SearchDrugView {
                     .stroke(lineWidth: 0.6)
                     .fill(viewModel.textFieldBorderColor)
             }
-            .focused($isFocused)
             .onSubmit {
             }
             .accessibility(identifier: "uitest.bottomview.texteditor")
@@ -130,6 +128,8 @@ private extension SearchDrugView {
         List {
             ForEach(viewModel.drugNames, id: \.self) { drugName in
                 Text(drugName)
+                    .listRowBackground(viewModel.drugNameListBackgroundColor)
+                    .foregroundStyle(viewModel.drugNameListTextColor)
             }
         }
         .buttonStyle(.plain)
