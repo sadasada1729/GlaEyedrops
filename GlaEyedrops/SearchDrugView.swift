@@ -11,12 +11,16 @@ import SwiftUI
 struct SearchDrugView: View {
     
     @StateObject private var viewModel = SearchDrugViewModel()
+    @FocusState var isFocused: Bool
     
     var body: some View {
         VStack {
             textField
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-            ZStack {
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+            if !viewModel.selectedDrug.isEmpty {
+                selectedDrug
+            }
+            ZStack(alignment: .top) {
                 VStack {
                     HStack {
                         eyedropsIcon1
@@ -46,7 +50,7 @@ struct SearchDrugView: View {
 
 private extension SearchDrugView {
     var textField: some View {
-        TextField("点眼薬名を入力", text: $viewModel.currentInput)
+        TextField("", text: $viewModel.currentInput)
             .scrollContentBackground(.hidden)
             .padding(EdgeInsets(top: 7, leading: 10, bottom: 7, trailing: 10))
             .frame(height: 52)
@@ -55,10 +59,32 @@ private extension SearchDrugView {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(lineWidth: 0.6)
                     .fill(viewModel.textFieldBorderColor)
+                textFieldPlaceHolder
             }
+            .focused($isFocused)
             .onSubmit {
             }
             .accessibility(identifier: "uitest.bottomview.texteditor")
+    }
+    
+    var textFieldPlaceHolder: some View {
+        ZStack {
+            if viewModel.currentInput.isEmpty {
+                HStack {
+                    Text("点眼薬名を入力")
+                        .allowsHitTesting(false)
+                        .foregroundColor(viewModel.placeholderColor)
+                        .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                    Spacer()
+                }
+            }
+        }
+    }
+    
+    var selectedDrug: some View {
+        Text(viewModel.selectedDrug)
+            .foregroundStyle(viewModel.selectedDrugTextColor)
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
     }
     
     var eyedropsIcon1: some View {
@@ -67,7 +93,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsHighlightColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.pg) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon2: some View {
@@ -76,7 +102,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.beta) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon3: some View {
@@ -85,7 +111,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.cai) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon4: some View {
@@ -94,7 +120,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.alpha1) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon5: some View {
@@ -103,7 +129,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsHighlightColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.alpha2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon6: some View {
@@ -112,7 +138,7 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.rho) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var eyedropsIcon7: some View {
@@ -121,18 +147,24 @@ private extension SearchDrugView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 70)
-            .foregroundStyle(viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.highlightDrugs.contains(.ep2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
     
     var drugNameList: some View {
         List {
-            ForEach(viewModel.drugNames, id: \.self) { drugName in
-                Text(drugName)
-                    .listRowBackground(viewModel.drugNameListBackgroundColor)
-                    .foregroundStyle(viewModel.drugNameListTextColor)
+            ForEach(viewModel.drugNameIndexes, id: \.self) { index in
+                Button(action: {
+                    viewModel.drugSelected(index: index)
+                    isFocused = false
+                }, label: {
+                    Text(viewModel.drugName(index: index))
+                        .listRowBackground(viewModel.drugNameListBackgroundColor)
+                        .foregroundStyle(viewModel.drugNameListTextColor)
+                })
             }
         }
-        .buttonStyle(.plain)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .listStyle(.inset)
         .scrollContentBackground(.hidden)
         .background(Color.clear)
     }
