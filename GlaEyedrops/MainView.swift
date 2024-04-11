@@ -12,7 +12,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             TopView(viewModel: viewModel)
-            LinearGradient(gradient: Gradient(colors: [viewModel.color0, viewModel.color1, viewModel.color2, viewModel.color3]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [viewModel.color0, viewModel.color1, viewModel.color2]), startPoint: .top, endPoint: .bottom)
                 .overlay(
                     VStack {
                         switch viewModel.viewContent {

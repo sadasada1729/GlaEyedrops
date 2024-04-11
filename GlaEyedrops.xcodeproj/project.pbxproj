@@ -54,6 +54,7 @@
 		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CD4394762BC349C800672530 /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
+		FF530B2F2BC803E500E1EFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF8318582BC493E700AB4B5D /* SearchDrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugView.swift; sourceTree = "<group>"; };
 		FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugViewModel.swift; sourceTree = "<group>"; };
 		FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugUseCase.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		CD4394462BC28E9D00672530 /* GlaEyedrops */ = {
 			isa = PBXGroup;
 			children = (
+				FF530B2F2BC803E500E1EFD8 /* Info.plist */,
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
 				CD4394492BC28E9D00672530 /* MainView.swift */,
 				CD4394732BC2992A00672530 /* MainViewModel.swift */,
@@ -469,10 +471,10 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlaEyedrops/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,10 +501,10 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlaEyedrops/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
