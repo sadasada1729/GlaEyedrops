@@ -19,6 +19,10 @@ class MainViewModel: ObservableObject {
     @Published private(set) var topvViewComponentBtnTextColor = Color(#colorLiteral(red: 0.3103860319, green: 0.5342879295, blue: 0.4702498317, alpha: 1))
     @Published private(set) var topvViewComponentBtnBackgroundColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
 
+    let color0 = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+    let color1 = Color(#colorLiteral(red: 0.9364411235, green: 0.9821696877, blue: 0.8768151402, alpha: 1))
+    let color2 = Color(#colorLiteral(red: 0.8969092965, green: 0.9082003832, blue: 0.9080017805, alpha: 1))
+    let color3 = Color(#colorLiteral(red: 0.7320033908, green: 0.8884314895, blue: 0.8983015418, alpha: 1))
     
     func topViewDrugNameBtnTapped() {
         viewContent = .drug_name
