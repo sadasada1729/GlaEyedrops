@@ -158,10 +158,11 @@ private extension SearchDrugView {
                     isFocused = false
                 }, label: {
                     Text(viewModel.drugName(index: index))
-                        .listRowBackground(viewModel.drugNameListBackgroundColor)
                         .foregroundStyle(viewModel.drugNameListTextColor)
                 })
+                .listRowBackground(viewModel.drugNameListBackgroundColor)
             }
+            
         }
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .listStyle(.inset)

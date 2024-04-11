@@ -8,13 +8,13 @@
 import Foundation
 
 enum EYEDROPS_COMPONENTS: Int {
-    case pg = 0
-    case beta = 1
-    case cai = 2
-    case alpha1 = 3
-    case alpha2 = 4
-    case rho = 5
-    case ep2 = 6
+    case pg = 1
+    case beta = 2
+    case cai = 3
+    case alpha1 = 4
+    case alpha2 = 5
+    case rho = 6
+    case ep2 = 7
 }
 
 class SearchDrugUseCase {
