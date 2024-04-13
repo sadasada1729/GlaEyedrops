@@ -19,7 +19,7 @@ struct MainView: View {
                         case .drug_name:
                             SearchDrugView()
                         case .component:
-                            Text("osada")
+                            SearchComponentView()
                         }
                         Spacer()
                     }
