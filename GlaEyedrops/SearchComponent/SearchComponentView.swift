@@ -16,6 +16,7 @@ struct SearchComponentView: View {
     var body: some View {
         VStack {
             selectComponentView
+            drugsViewList
         }
     }
 }
@@ -47,7 +48,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.pg) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.pg) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .pg)
             }
@@ -59,7 +60,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.beta) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.beta) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .beta)
             }
@@ -71,7 +72,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.cai) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.cai) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .cai)
             }
@@ -83,7 +84,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.alpha1) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.alpha1) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .alpha1)
             }
@@ -95,7 +96,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.alpha2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.alpha2) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .alpha2)
             }
@@ -107,7 +108,7 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.rho) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.rho) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .rho)
             }
@@ -119,14 +120,80 @@ private extension SearchComponentView {
             .resizable()
             .scaledToFit()
             .frame(maxWidth: 50)
-            .foregroundStyle(viewModel.highlightDrugs.contains(.ep2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
+            .foregroundStyle(viewModel.selectedComponents.contains(.ep2) ? viewModel.eyedropsHighlightColor1 : viewModel.eyedropsDefaultColor1)
             .onTapGesture {
                 viewModel.compoentTapped(component: .ep2)
             }
     }
 
+    var drugsViewList: some View {
+        List {
+            ForEach(viewModel.selectedDrugs, id: \.self) { index in
+                HStack {
+                    Text(viewModel.getDrugName(index: index))
+                        .frame(width: 135)
+                        .foregroundStyle(viewModel.eyedropsNameTextColor)
+                    HStack {
+                        Image("eyedrops_pg_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.pg) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_beta_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.beta) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_cai_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.cai) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_alpha1_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.alpha1) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_alpha2_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.alpha2) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_rho_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.rho) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                        Image("eyedrops_ep2_wide")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 50)
+                            .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.ep2) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
+                    }
+                }
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden, edges: .top)
+                .listSectionSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5))
+            }
+            
+        }
+        .listStyle(.inset)
+        .scrollContentBackground(.hidden)
+        .scrollIndicators(.hidden)
+        .background(viewModel.drugNameListBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
+        .clipped()
+        .padding()
+    }
 }
 
 #Preview {
-    SearchComponentView()
+    MainView()
 }
