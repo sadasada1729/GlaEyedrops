@@ -17,6 +17,9 @@
 		CD4394722BC2900000672530 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394712BC2900000672530 /* TopView.swift */; };
 		CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4394732BC2992A00672530 /* MainViewModel.swift */; };
 		CD4394772BC349C800672530 /* gla_eyedrops.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD4394762BC349C800672530 /* gla_eyedrops.csv */; };
+		FF530B332BC889B300E1EFD8 /* SearchComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF530B322BC889B300E1EFD8 /* SearchComponentView.swift */; };
+		FF530B352BC889D600E1EFD8 /* SearchComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF530B342BC889D600E1EFD8 /* SearchComponentViewModel.swift */; };
+		FF530B372BC889F800E1EFD8 /* SearchComponentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF530B362BC889F800E1EFD8 /* SearchComponentUseCase.swift */; };
 		FF8318592BC493E700AB4B5D /* SearchDrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8318582BC493E700AB4B5D /* SearchDrugView.swift */; };
 		FF83185B2BC4964200AB4B5D /* SearchDrugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */; };
 		FF83185D2BC5655F00AB4B5D /* SearchDrugUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */; };
@@ -54,6 +57,10 @@
 		CD4394712BC2900000672530 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		CD4394732BC2992A00672530 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CD4394762BC349C800672530 /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
+		FF530B2F2BC803E500E1EFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF530B322BC889B300E1EFD8 /* SearchComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponentView.swift; sourceTree = "<group>"; };
+		FF530B342BC889D600E1EFD8 /* SearchComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponentViewModel.swift; sourceTree = "<group>"; };
+		FF530B362BC889F800E1EFD8 /* SearchComponentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchComponentUseCase.swift; sourceTree = "<group>"; };
 		FF8318582BC493E700AB4B5D /* SearchDrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugView.swift; sourceTree = "<group>"; };
 		FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugViewModel.swift; sourceTree = "<group>"; };
 		FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugUseCase.swift; sourceTree = "<group>"; };
@@ -108,13 +115,13 @@
 		CD4394462BC28E9D00672530 /* GlaEyedrops */ = {
 			isa = PBXGroup;
 			children = (
+				FF530B2F2BC803E500E1EFD8 /* Info.plist */,
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
 				CD4394492BC28E9D00672530 /* MainView.swift */,
 				CD4394732BC2992A00672530 /* MainViewModel.swift */,
-				FF8318582BC493E700AB4B5D /* SearchDrugView.swift */,
-				FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */,
-				FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */,
 				CD4394712BC2900000672530 /* TopView.swift */,
+				FF530B312BC8898D00E1EFD8 /* SearchComponent */,
+				FF530B302BC8895D00E1EFD8 /* SearchDrug */,
 				FF83185E2BC56B9800AB4B5D /* Tools */,
 				CD4394752BC3493100672530 /* Supporting Files */,
 				CD43944B2BC28E9F00672530 /* Assets.xcassets */,
@@ -154,6 +161,26 @@
 				CD4394762BC349C800672530 /* gla_eyedrops.csv */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF530B302BC8895D00E1EFD8 /* SearchDrug */ = {
+			isa = PBXGroup;
+			children = (
+				FF8318582BC493E700AB4B5D /* SearchDrugView.swift */,
+				FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */,
+				FF83185A2BC4964200AB4B5D /* SearchDrugViewModel.swift */,
+			);
+			path = SearchDrug;
+			sourceTree = "<group>";
+		};
+		FF530B312BC8898D00E1EFD8 /* SearchComponent */ = {
+			isa = PBXGroup;
+			children = (
+				FF530B322BC889B300E1EFD8 /* SearchComponentView.swift */,
+				FF530B342BC889D600E1EFD8 /* SearchComponentViewModel.swift */,
+				FF530B362BC889F800E1EFD8 /* SearchComponentUseCase.swift */,
+			);
+			path = SearchComponent;
 			sourceTree = "<group>";
 		};
 		FF83185E2BC56B9800AB4B5D /* Tools */ = {
@@ -301,8 +328,11 @@
 				FF8318602BC56BAE00AB4B5D /* Extensions.swift in Sources */,
 				CD4394482BC28E9D00672530 /* GlaEyedropsApp.swift in Sources */,
 				FF8318592BC493E700AB4B5D /* SearchDrugView.swift in Sources */,
+				FF530B352BC889D600E1EFD8 /* SearchComponentViewModel.swift in Sources */,
 				FF83185D2BC5655F00AB4B5D /* SearchDrugUseCase.swift in Sources */,
+				FF530B372BC889F800E1EFD8 /* SearchComponentUseCase.swift in Sources */,
 				CD4394742BC2992A00672530 /* MainViewModel.swift in Sources */,
+				FF530B332BC889B300E1EFD8 /* SearchComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,10 +499,10 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlaEyedrops/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,10 +529,10 @@
 				DEVELOPMENT_TEAM = M92QFT5Y23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GlaEyedrops/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "緑内障点眼";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -11,7 +11,7 @@ import SwiftUI
 struct SearchDrugView: View {
     
     @StateObject private var viewModel = SearchDrugViewModel()
-    @FocusState var isFocused: Bool
+    @FocusState private var isFocused: Bool
     
     var body: some View {
         VStack {
