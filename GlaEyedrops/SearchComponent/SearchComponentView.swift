@@ -130,6 +130,7 @@ private extension SearchComponentView {
         List {
             ForEach(viewModel.selectedDrugs, id: \.self) { index in
                 HStack {
+                    Spacer()
                     Text(viewModel.getDrugName(index: index))
                         .frame(width: 135)
                         .foregroundStyle(viewModel.eyedropsNameTextColor)
@@ -177,6 +178,7 @@ private extension SearchComponentView {
                             .frame(maxWidth: 50)
                             .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.ep2) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
                     }
+                    Spacer()
                 }
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden, edges: .top)
