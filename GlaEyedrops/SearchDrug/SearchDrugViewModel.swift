@@ -14,9 +14,9 @@ class SearchDrugViewModel: ObservableObject {
     @Published private(set) var drugNameIndexes: [Int] = [] { didSet { updatePopUpState() } }
     @Published private(set) var selectedDrug: String = ""
     @Published private(set) var highlightDrugs: [EYEDROPS_COMPONENTS] = []
-        
+
     let backgroundColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
-    
+
     let tintColor = Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1))
     let textFieldBackgroundColor = Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
     let textFieldBorderColor = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
@@ -26,11 +26,11 @@ class SearchDrugViewModel: ObservableObject {
     let drugNameListBackgroundColor = Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
     let drugNameListTextColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     let placeholderColor = Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1))
-    
+
     func drugName(index: Int) -> String {
         return SearchDrugUseCase.getEyedropsNameFromIndex(index: index) ?? ""
     }
-    
+
     func drugSelected(index: Int) {
         if let drug = SearchDrugUseCase.getEyedropsNameFromIndex(index: index) {
             selectedDrug = drug
@@ -44,13 +44,12 @@ private extension SearchDrugViewModel {
     func updateDrugNames() {
         drugNameIndexes = SearchDrugUseCase.getPredictedEyeDropsIndex(text: currentInput)
     }
-    
+
     func updatePopUpState() {
         if drugNameIndexes.isEmpty {
             showDrugNameList = false
         } else {
             showDrugNameList = true
         }
-        
     }
 }
