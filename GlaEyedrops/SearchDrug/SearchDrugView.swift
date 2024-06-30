@@ -83,9 +83,16 @@ private extension SearchDrugView {
     }
 
     var selectedDrug: some View {
-        Text(viewModel.selectedDrug)
-            .foregroundStyle(viewModel.selectedDrugTextColor)
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+        HStack {
+            Text(viewModel.selectedDrug)
+                .foregroundStyle(viewModel.selectedDrugTextColor)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .font(.subheadline)
+            Text(viewModel.selectedDrugNum)
+                .foregroundStyle(viewModel.selectedDrugNumTextColor)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .font(.system(size: 15))
+        }
     }
 
     var eyedropsIcon1: some View {

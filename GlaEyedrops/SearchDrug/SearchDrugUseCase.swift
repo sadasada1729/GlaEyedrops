@@ -33,6 +33,10 @@ class SearchDrugUseCase {
     static func getEyedropsNameFromIndex(index: Int) -> String? {
         return (getCSV()[safe: index] ?? []).first
     }
+    
+    static func getEyedropsNumFromIndex(index: Int) -> String? {
+        return (getCSV()[safe: index] ?? []).last
+    }
 
     static func getEyedropsComponentsFromIndex(index: Int) -> [EYEDROPS_COMPONENTS] {
         guard let component = getCSV()[safe: index] else { return [] }
