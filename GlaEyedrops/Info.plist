@@ -7,7 +7,7 @@
 		<key>UIColorName</key>
 		<string>LaunchScreenBackgroundColor</string>
 		<key>UIImageName</key>
-		<string>AppIconLarge</string>
+		<string>launch_icon</string>
 	</dict>
 </dict>
 </plist>

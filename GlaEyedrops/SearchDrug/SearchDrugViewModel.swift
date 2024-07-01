@@ -22,7 +22,7 @@ class SearchDrugViewModel: ObservableObject {
     let textFieldBackgroundColor = Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
     let textFieldBorderColor = Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
     let selectedDrugTextColor = Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
-    let selectedDrugNumTextColor = Color(#colorLiteral(red: 0.380572319, green: 0.4768701792, blue: 0.5755326748, alpha: 1))
+    let selectedDrugNumTextColor = Color(#colorLiteral(red: 0.5167645216, green: 0.2168515325, blue: 0.3212571144, alpha: 1))
     let eyedropsDefaultColor = Color(#colorLiteral(red: 0.3618570566, green: 0.824965179, blue: 0.8113998771, alpha: 1))
     let eyedropsHighlightColor = Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1))
     let drugNameListBackgroundColor = Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))

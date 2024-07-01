@@ -83,15 +83,15 @@ private extension SearchDrugView {
     }
 
     var selectedDrug: some View {
-        HStack {
+        HStack(spacing: 12) {
             Text(viewModel.selectedDrug)
                 .foregroundStyle(viewModel.selectedDrugTextColor)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-                .font(.subheadline)
+                .font(.system(size: 16, weight: .semibold))
             Text(viewModel.selectedDrugNum)
                 .foregroundStyle(viewModel.selectedDrugNumTextColor)
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-                .font(.system(size: 15))
+                .font(.system(size: 14))
         }
     }
 
