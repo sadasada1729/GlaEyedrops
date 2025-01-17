@@ -1,12 +1,9 @@
 # 緑内障点眼アプリ
 
 ### Overview
-- Timer app
-- Measure multiple timers simultaneously
-- Sync times online
-- Save times
-- Share times
-- User feedback feature
+- 点眼薬名から成分を検索
+- 成分から点眼薬を検索
+- 外来などで急いでいるときに検索できて便利です
 
 ---
 Privacy Policy
