@@ -24,6 +24,7 @@
 		FF83185D2BC5655F00AB4B5D /* SearchDrugUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */; };
 		FF8318602BC56BAE00AB4B5D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83185F2BC56BAE00AB4B5D /* Extensions.swift */; };
 		FF8A1FEB2C321A7B00CD6F9F /* gla_eyedrops.csv in Resources */ = {isa = PBXBuildFile; fileRef = FF8A1FEA2C321A7B00CD6F9F /* gla_eyedrops.csv */; };
+		FFA5BF302D39F2D00014CBE1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = FFA5BF2F2D39F2D00014CBE1 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FF83185C2BC5655F00AB4B5D /* SearchDrugUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDrugUseCase.swift; sourceTree = "<group>"; };
 		FF83185F2BC56BAE00AB4B5D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FF8A1FEA2C321A7B00CD6F9F /* gla_eyedrops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gla_eyedrops.csv; sourceTree = "<group>"; };
+		FFA5BF2F2D39F2D00014CBE1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		CD4394462BC28E9D00672530 /* GlaEyedrops */ = {
 			isa = PBXGroup;
 			children = (
+				FFA5BF2F2D39F2D00014CBE1 /* PrivacyInfo.xcprivacy */,
 				FF530B2F2BC803E500E1EFD8 /* Info.plist */,
 				CD4394472BC28E9D00672530 /* GlaEyedropsApp.swift */,
 				CD4394492BC28E9D00672530 /* MainView.swift */,
@@ -301,6 +304,7 @@
 			files = (
 				CD43944F2BC28E9F00672530 /* Preview Assets.xcassets in Resources */,
 				CD43944C2BC28E9F00672530 /* Assets.xcassets in Resources */,
+				FFA5BF302D39F2D00014CBE1 /* PrivacyInfo.xcprivacy in Resources */,
 				FF8A1FEB2C321A7B00CD6F9F /* gla_eyedrops.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
