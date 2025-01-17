@@ -4,15 +4,16 @@
 //
 //  Created by 長田公喜 on 2024/04/09.
 //
+// swiftlint:disable line_length
 
 import Foundation
 import SwiftUI
 
 struct SearchDrugView: View {
-    
+
     @StateObject private var viewModel = SearchDrugViewModel()
     @FocusState private var isFocused: Bool
-    
+
     var body: some View {
         VStack {
             textField
@@ -66,7 +67,7 @@ private extension SearchDrugView {
             }
             .accessibility(identifier: "uitest.bottomview.texteditor")
     }
-    
+
     var textFieldPlaceHolder: some View {
         ZStack {
             if viewModel.currentInput.isEmpty {
@@ -80,13 +81,20 @@ private extension SearchDrugView {
             }
         }
     }
-    
+
     var selectedDrug: some View {
-        Text(viewModel.selectedDrug)
-            .foregroundStyle(viewModel.selectedDrugTextColor)
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+        HStack(spacing: 12) {
+            Text(viewModel.selectedDrug)
+                .foregroundStyle(viewModel.selectedDrugTextColor)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .font(.system(size: 16, weight: .semibold))
+            Text(viewModel.selectedDrugNum)
+                .foregroundStyle(viewModel.selectedDrugNumTextColor)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .font(.system(size: 14))
+        }
     }
-    
+
     var eyedropsIcon1: some View {
         Image("eyedrops_PG")
             .renderingMode(.template)
@@ -95,7 +103,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.pg) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon2: some View {
         Image("eyedrops_beta")
             .renderingMode(.template)
@@ -104,7 +112,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.beta) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon3: some View {
         Image("eyedrops_CAI")
             .renderingMode(.template)
@@ -113,7 +121,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.cai) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon4: some View {
         Image("eyedrops_alpha1")
             .renderingMode(.template)
@@ -122,7 +130,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.alpha1) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon5: some View {
         Image("eyedrops_alpha2")
             .renderingMode(.template)
@@ -131,7 +139,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.alpha2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon6: some View {
         Image("eyedrops_Rho")
             .renderingMode(.template)
@@ -140,7 +148,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.rho) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var eyedropsIcon7: some View {
         Image("eyedrops_EP2")
             .renderingMode(.template)
@@ -149,7 +157,7 @@ private extension SearchDrugView {
             .frame(maxWidth: 70)
             .foregroundStyle(viewModel.highlightDrugs.contains(.ep2) ? viewModel.eyedropsHighlightColor : viewModel.eyedropsDefaultColor)
     }
-    
+
     var drugNameList: some View {
         List {
             ForEach(viewModel.drugNameIndexes, id: \.self) { index in
@@ -162,17 +170,16 @@ private extension SearchDrugView {
                 })
                 .listRowBackground(viewModel.drugNameListBackgroundColor)
             }
-            
         }
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .listStyle(.inset)
         .scrollContentBackground(.hidden)
         .background(Color.clear)
     }
-
 }
-
 
 #Preview {
     MainView()
 }
+
+// swiftlint:enable line_length

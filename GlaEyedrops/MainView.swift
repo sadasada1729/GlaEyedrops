@@ -4,7 +4,7 @@
 //
 //  Created by 長田公喜 on 2024/04/07.
 //
-
+// swiftlint:disable line_length
 import SwiftUI
 
 struct MainView: View {
@@ -16,7 +16,7 @@ struct MainView: View {
                 .overlay(
                     VStack {
                         switch viewModel.viewContent {
-                        case .drug_name:
+                        case .drugName:
                             SearchDrugView()
                         case .component:
                             SearchComponentView()
@@ -33,3 +33,5 @@ struct MainView: View {
 #Preview {
     MainView()
 }
+
+// swiftlint:enable line_length

@@ -4,15 +4,16 @@
 //
 //  Created by 長田公喜 on 2024/04/12.
 //
+// swiftlint:disable line_length
 
 import Foundation
 import SwiftUI
 
 struct SearchComponentView: View {
-    
+
     @StateObject private var viewModel = SearchComponentViewModel()
     @FocusState private var isFocused: Bool
-    
+
     var body: some View {
         VStack {
             selectComponentView
@@ -41,7 +42,7 @@ private extension SearchComponentView {
         .compositingGroup()
         .shadow(radius: 4, x: 3, y: 4)
     }
-    
+
     var eyedropsIcon1: some View {
         Image("eyedrops_pg_wide")
             .renderingMode(.template)
@@ -53,7 +54,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .pg)
             }
     }
-    
+
     var eyedropsIcon2: some View {
         Image("eyedrops_beta_wide")
             .renderingMode(.template)
@@ -65,7 +66,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .beta)
             }
     }
-    
+
     var eyedropsIcon3: some View {
         Image("eyedrops_cai_wide")
             .renderingMode(.template)
@@ -77,7 +78,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .cai)
             }
     }
-    
+
     var eyedropsIcon4: some View {
         Image("eyedrops_alpha1_wide")
             .renderingMode(.template)
@@ -89,7 +90,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .alpha1)
             }
     }
-    
+
     var eyedropsIcon5: some View {
         Image("eyedrops_alpha2_wide")
             .renderingMode(.template)
@@ -101,7 +102,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .alpha2)
             }
     }
-    
+
     var eyedropsIcon6: some View {
         Image("eyedrops_rho_wide")
             .renderingMode(.template)
@@ -113,7 +114,7 @@ private extension SearchComponentView {
                 viewModel.compoentTapped(component: .rho)
             }
     }
-    
+
     var eyedropsIcon7: some View {
         Image("eyedrops_ep2_wide")
             .renderingMode(.template)
@@ -130,6 +131,7 @@ private extension SearchComponentView {
         List {
             ForEach(viewModel.selectedDrugs, id: \.self) { index in
                 HStack {
+                    Spacer()
                     Text(viewModel.getDrugName(index: index))
                         .frame(width: 135)
                         .foregroundStyle(viewModel.eyedropsNameTextColor)
@@ -177,13 +179,13 @@ private extension SearchComponentView {
                             .frame(maxWidth: 50)
                             .foregroundStyle(viewModel.getDrugComponents(index: index).contains(.ep2) ? viewModel.eyedropsHighlightColor2 : viewModel.eyedropsDefaultColor2)
                     }
+                    Spacer()
                 }
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden, edges: .top)
                 .listSectionSeparator(.hidden)
                 .listRowInsets(EdgeInsets(top: 10, leading: 5, bottom: 10, trailing: 5))
             }
-            
         }
         .listStyle(.inset)
         .scrollContentBackground(.hidden)
@@ -197,3 +199,5 @@ private extension SearchComponentView {
 #Preview {
     MainView()
 }
+
+// swiftlint:enable line_length
