@@ -1,11 +1,3 @@
-//
-//  SearchComponentView.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/12.
-//
-// swiftlint:disable line_length
-
 import Foundation
 import SwiftUI
 
@@ -199,5 +191,3 @@ private extension SearchComponentView {
 #Preview {
     MainView()
 }
-
-// swiftlint:enable line_length

@@ -1,11 +1,3 @@
-//
-//  SearchDrugView.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/09.
-//
-// swiftlint:disable line_length
-
 import Foundation
 import SwiftUI
 
@@ -181,5 +173,3 @@ private extension SearchDrugView {
 #Preview {
     MainView()
 }
-
-// swiftlint:enable line_length

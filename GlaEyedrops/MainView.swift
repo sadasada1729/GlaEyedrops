@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/07.
-//
-// swiftlint:disable line_length
 import SwiftUI
 
 struct MainView: View {
@@ -33,5 +26,3 @@ struct MainView: View {
 #Preview {
     MainView()
 }
-
-// swiftlint:enable line_length
