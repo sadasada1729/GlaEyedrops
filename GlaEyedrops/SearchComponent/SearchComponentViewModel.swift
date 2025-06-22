@@ -1,11 +1,3 @@
-//
-//  SearchComponentViewModel.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/12.
-//
-// swiftlint:disable line_length
-
 import Foundation
 import SwiftUI
 
@@ -43,5 +35,3 @@ private extension SearchComponentViewModel {
         selectedDrugs = SearchComponentUseCase.getDrugsContainSelectedComponents(components: selectedComponents)
     }
 }
-
-// swiftlint:enable line_length

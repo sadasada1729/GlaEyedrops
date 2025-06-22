@@ -1,11 +1,3 @@
-//
-//  TopView.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/07.
-//
-// swiftlint: disable line_length
-
 import Foundation
 import SwiftUI
 
@@ -52,5 +44,3 @@ struct TopView: View {
 #Preview {
     MainView()
 }
-
-// swiftlint:enable line_length

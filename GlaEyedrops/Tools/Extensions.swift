@@ -1,11 +1,3 @@
-//
-//  Extensions.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/09.
-//
-// swiftlint:disable line_length
-
 import Foundation
 import SwiftUI
 
@@ -94,5 +86,3 @@ extension UIImage {
         return UIGraphicsImageRenderer(size: canvas, format: imageRendererFormat).image { _ in draw(in: CGRect(origin: .zero, size: canvas)) }
     }
 }
-
-// swiftlint:enable line_length

@@ -1,11 +1,3 @@
-//
-//  SearchDrugUseCase.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/09.
-//
-// swiftlint:disable type_name line_length 
-
 import Foundation
 
 enum EYEDROPS_COMPONENTS: Int {
@@ -33,7 +25,7 @@ class SearchDrugUseCase {
     static func getEyedropsNameFromIndex(index: Int) -> String? {
         return (getCSV()[safe: index] ?? []).first
     }
-    
+
     static func getEyedropsNumFromIndex(index: Int) -> String? {
         return (getCSV()[safe: index] ?? []).last
     }
@@ -108,4 +100,3 @@ private extension SearchDrugUseCase {
         return csv
     }
 }
-// swiftlint:enable type_name line_length
