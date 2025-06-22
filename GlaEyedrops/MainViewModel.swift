@@ -1,20 +1,13 @@
-//
-//  MainViewModel.swift
-//  GlaEyedrops
-//
-//  Created by 長田公喜 on 2024/04/07.
-//
-// swiftlint:disable type_name
 import Foundation
 import SwiftUI
 
 class MainViewModel: ObservableObject {
-    enum VIEW_CONTENT {
+    enum ViewContent {
         case drugName
         case component
     }
 
-    @Published private(set) var viewContent: VIEW_CONTENT = .drugName { didSet { setTopViewColor() } }
+    @Published private(set) var viewContent: ViewContent = .drugName { didSet { setTopViewColor() } }
     @Published private(set) var topvViewDrugNameBtnTextColor = Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     @Published private(set) var topvViewDrugNameBtnBackgroundColor = Color(#colorLiteral(red: 0.3103860319, green: 0.5342879295, blue: 0.4702498317, alpha: 1))
     @Published private(set) var topvViewComponentBtnTextColor = Color(#colorLiteral(red: 0.3103860319, green: 0.5342879295, blue: 0.4702498317, alpha: 1))
@@ -51,5 +44,3 @@ private extension MainViewModel {
         }
     }
 }
-
-// swiftlint:enable type_name
